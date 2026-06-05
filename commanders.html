@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>فرزندان ایران زمین</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Vazirmatn',sans-serif;
+background:#f7f1e3;
+color:#333;
+}
+
+/* Header */
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 50px;
+
+background:rgba(55,35,20,.85);
+backdrop-filter:blur(10px);
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+}
+
+.logo{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-right:18px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#d8b67c;
+}
+
+/* Hero */
+.hero{
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+url("iran-madfgbp.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+text-align:center;
+color:white;
+}
+
+.overlay h1{
+font-size:75px;
+margin-bottom:15px;
+animation:fadeUp 1s ease;
+}
+
+.overlay p{
+font-size:25px;
+margin-bottom:30px;
+}
+
+.hero-btn{
+background:#b8894a;
+padding:15px 35px;
+border-radius:40px;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.hero-btn:hover{
+transform:scale(1.1);
+}
+
+/* About */
+.about{
+padding:100px 10%;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+color:#5a3e2b;
+}
+
+.about p{
+font-size:20px;
+line-height:2;
+}
+
+/* Cards */
+.cards{
+padding:40px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+border-top:5px solid #8b5e3c;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.card h2{
+margin-bottom:15px;
+color:#5a3e2b;
+}
+
+/* Stats */
+.stats{
+padding:100px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.stat{
+background:#5a3e2b;
+color:white;
+padding:30px;
+border-radius:20px;
+}
+
+.stat h3{
+font-size:45px;
+margin-bottom:10px;
+}
+
+/* Quote */
+.quote{
+padding:100px 10%;
+text-align:center;
+background:#ede0c8;
+}
+
+.quote h2{
+color:#5a3e2b;
+margin-bottom:20px;
+}
+
+.quote p{
+font-size:35px;
+font-weight:bold;
+}
+
+/* 👑 Kings Shop Style Section */
+.kings{
+padding:100px 10%;
+text-align:center;
+}
+
+.kings h2{
+font-size:40px;
+margin-bottom:40px;
+color:#5a3e2b;
+}
+
+.kings-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.king-card{
+display:block;
+text-decoration:none;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.king-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 35px rgba(0,0,0,.2);
+}
+
+.king-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.king-name{
+padding:15px;
+font-size:20px;
+font-weight:bold;
+color:#5a3e2b;
+border-top:1px solid #eee;
+}
+
+/* Footer */
+footer{
+background:#372314;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+/* Animation */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.overlay h1{
+font-size:45px;
+}
+
+.overlay p{
+font-size:18px;
+}
+
+.about h2{
+font-size:30px;
+}
+
+.quote p{
+font-size:25px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo-box">
+        <img src="png1.png" class="logo">
+        <h3>فرزندان ایران زمین</h3>
+    </div>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="king.html">پادشاهان</a>
+        <a href="commanders.html">سرداران</a>
+        <a href="shahname.html">شاهنامه</a>
+        <a href="work.html">آثار تاریخی </a>
+        <a href="about.html">درباره ما</a>
+        <a href="calling.html">ارتباط با ما </a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="overlay">
+        <h1>درباره سرداران</h1>
+        <p>
+سرداران ایران از مهم‌ترین چهره‌های تاریخی این سرزمین هستند که در جنگ‌ها، دفاع از مرزها و حفظ استقلال کشور نقش بزرگی داشته‌اند. آن‌ها با شجاعت، فرماندهی قوی و فداکاری، سرنوشت بسیاری از نبردهای مهم ایران را رقم زده‌اند.
+سردارانی مانند رستم (در شاهنامه به‌عنوان پهلوان بزرگ)، آریوبرزن و دیگر فرماندهان نامدار، نماد غیرت، قدرت و ایستادگی در برابر دشمنان هستند. این افراد در شرایط سخت، با تدبیر و شجاعت، از سرزمین خود دفاع کرده‌اند.
+سرداران ایران نشان‌دهنده روح مبارزه‌طلبی و افتخار ملی هستند و یاد آن‌ها همیشه بخشی از تاریخ پرافتخار ایران باقی خواهد مان
+
+</p>
+        <a class="hero-btn" href="index.html">بازگشت به خانه</a>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>درباره این بخش </h2>
+    <p>
+        این بخش برای معرفی تاریخ و سرداران ایران ساخته شده است.
+    </p>
+</section>
+
+<!-- 👑 Kings Section -->
+<section class="kings" id="kings">
+
+    <h2>⚔️ سرداران ایران</h2>
+
+    <div class="kings-grid">
+
+        <a href="#" class="king-card">
+            <img src="ariyo.jpg">
+            <div class="king-name">آریو برزن</div>
+<p>
+آریو برزن یکی از فرماندهان شجاع ایرانی در دوران هخامنشیان بود که به‌عنوان نماد مقاومت در برابر حمله اسکندر مقدونی شناخته می‌شود. او در نبردی سخت در گذرگاه‌های کوهستانی ایران با سپاه اسکندر مقابله کرد و با وجود امکانات محدود، با شجاعت بسیار از سرزمین خود دفاع نمود. آریو برزن نماد ایستادگی، غیرت و دفاع از وطن در تاریخ ایران است.
+</p>
+        </a>
+
+        <a href="#" class="king-card">
+            <img src="babak.jpg">
+            <div class="king-name">بابک خرمدین</div>
+<p>
+نادرشاه افشار یکی از قدرتمندترین پادشاهان و فرماندهان نظامی تاریخ ایران بود که در قرن 18 میلادی حکومت کرد. او بنیان‌گذار سلسله افشاریه بود و توانست ایران را پس از دوران آشوب دوباره متحد کند. نادرشاه به فتوحات بزرگ و اصلاحات نظامی مشهور است و به «نادرِ ایران» یا «ناپلئون شرق» نیز لقب گرفته است. او نماد قدرت نظامی و احیای دوباره ایران در تاریخ است.
+</p>
+        </a>
+
+        <a href="#" class="king-card">
+            <img src="nader.jpg">
+            <div class="king-name">نادرشاه افشار </div>
+<p>
+بابک خرمدین رهبر جنبش خرمدینان در قرن سوم هجری بود که سال‌ها علیه حکومت عباسیان در ایران مبارزه کرد. او از آذربایجان قیام خود را آغاز کرد و با هدف حفظ استقلال و هویت ایرانی، مقاومت طولانی‌مدتی را هدایت نمود. بابک خرمدین به‌عنوان نماد آزادی‌خواهی، مقاومت و مبارزه با ظلم در تاریخ ایران شناخته می‌شود.
+</p>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Quote -->
+<section class="quote">
+    <h2>جمله تاریخی (از آریو برزن)</h2>
+    <p>«تنها کسی از این تنگه عبور خواهد کرد که از روی پیکر ما بگذرد»</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p> فرزندان ایران زمین</p>
+</footer>
+
+</body>
+</html>

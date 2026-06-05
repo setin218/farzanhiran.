@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>فرزندان ایران زمین</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Vazirmatn',sans-serif;
+background:#f7f1e3;
+color:#333;
+}
+
+/* Header */
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 50px;
+
+background:rgba(55,35,20,.85);
+backdrop-filter:blur(10px);
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+}
+
+.logo{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-right:18px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#d8b67c;
+}
+
+/* Hero */
+.hero{
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+url("iran-madfgbp.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+text-align:center;
+color:white;
+}
+
+.overlay h1{
+font-size:75px;
+margin-bottom:15px;
+animation:fadeUp 1s ease;
+}
+
+.overlay p{
+font-size:25px;
+margin-bottom:30px;
+}
+
+.hero-btn{
+background:#b8894a;
+padding:15px 35px;
+border-radius:40px;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.hero-btn:hover{
+transform:scale(1.1);
+}
+
+/* About */
+.about{
+padding:100px 10%;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+color:#5a3e2b;
+}
+
+.about p{
+font-size:20px;
+line-height:2;
+}
+
+/* Cards */
+.cards{
+padding:40px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+border-top:5px solid #8b5e3c;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.card h2{
+margin-bottom:15px;
+color:#5a3e2b;
+}
+
+/* Stats */
+.stats{
+padding:100px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.stat{
+background:#5a3e2b;
+color:white;
+padding:30px;
+border-radius:20px;
+}
+
+.stat h3{
+font-size:45px;
+margin-bottom:10px;
+}
+
+/* Quote */
+.quote{
+padding:100px 10%;
+text-align:center;
+background:#ede0c8;
+}
+
+.quote h2{
+color:#5a3e2b;
+margin-bottom:20px;
+}
+
+.quote p{
+font-size:35px;
+font-weight:bold;
+}
+
+/* 👑 Kings Shop Style Section */
+.kings{
+padding:100px 10%;
+text-align:center;
+}
+
+.kings h2{
+font-size:40px;
+margin-bottom:40px;
+color:#5a3e2b;
+}
+
+.kings-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.king-card{
+display:block;
+text-decoration:none;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.king-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 35px rgba(0,0,0,.2);
+}
+
+.king-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.king-name{
+padding:15px;
+font-size:20px;
+font-weight:bold;
+color:#5a3e2b;
+border-top:1px solid #eee;
+}
+
+/* Footer */
+footer{
+background:#372314;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+/* Animation */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.overlay h1{
+font-size:45px;
+}
+
+.overlay p{
+font-size:18px;
+}
+
+.about h2{
+font-size:30px;
+}
+
+.quote p{
+font-size:25px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo-box">
+        <img src="png1.png" class="logo">
+        <h3>فرزندان ایران زمین</h3>
+    </div>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="king.html">پادشاهان</a>
+        <a href="commanders.html">سرداران</a>
+        <a href="shahname.html">شاهنامه</a>
+        <a href="work.html">آثار تاریخی </a>
+        <a href="about.html">درباره ما</a>
+        <a href="calling.html">ارتباط با ما </a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="overlay">
+        <h1>آثار تاریخی </h1>
+        <p>
+آثار تاریخی ایران نشان‌دهنده‌ی تمدنی بسیار کهن، پیشرفته و پرافتخار هستند که هزاران سال قدمت دارند. این آثار شامل بناها، کاخ‌ها، شهرهای باستانی و سازه‌هایی هستند که توسط پادشاهان و مردمان ایران در دوره‌های مختلف ساخته شده‌اند.
+از جمله مهم‌ترین آثار تاریخی ایران می‌توان به تخت جمشید، پاسارگاد، نقش جهان و ارگ بم اشاره کرد. این مکان‌ها نه‌تنها از نظر معماری شگفت‌انگیز هستند، بلکه بیانگر فرهنگ، هنر و دانش ایرانیان در زمان‌های گذشته‌اند.
+آثار تاریخی ایران بخشی از هویت ملی ما هستند و حفظ و شناخت آن‌ها کمک می‌کند تاریخ و شکوه این سرزمین را بهتر درک کنیم.
+</p>
+        <a class="hero-btn" href="index.html">بازگشت به خانه</a>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>درباره این بخش </h2>
+    <p>
+        این بخش برای معرفی آثار و هنر ایران ساخته شده است.
+    </p>
+</section>
+
+<!-- 👑 Kings Section -->
+<section class="kings" id="kings">
+
+    <h2>آثار تاریخی </h2>
+
+    <div class="kings-grid">
+
+        <a href="#" class="king-card">
+            <img src="takht.jpg">
+            <div class="king-name">تخت جمشید </div>
+            <p>
+تخت جمشید یکی از باشکوه‌ترین آثار تاریخی ایران و جهان است که در دوران هخامنشیان و به دستور داریوش بزرگ ساخته شد. این مجموعه در نزدیکی شهر مرودشت در استان فارس قرار دارد و به‌عنوان پایتخت تشریفاتی امپراتوری هخامنشی شناخته می‌شد.
+در تخت جمشید کاخ‌ها، ستون‌های عظیم، نقش‌برجسته‌ها و پلکان‌های سنگی دیده می‌شود که نشان‌دهنده‌ی هنر، معماری پیشرفته و قدرت امپراتوری ایران باستان هستند. این بنا محل برگزاری مراسم مهم، جشن‌ها و پذیرایی از نمایندگان کشورهای مختلف بوده است.
+تخت جمشید نماد شکوه، تمدن و عظمت ایران باستان است و امروز یکی از مهم‌ترین میراث‌های جهانی به شمار می‌رود
+</p>
+        </a>
+
+        <a href="#" class="king-card">
+            <img src="arg.jpg">
+            <div class="king-name">ارگ بم</div>
+<p>
+ارگ بم یکی از بزرگ‌ترین و قدیمی‌ترین سازه‌های خشتی جهان است که در شهر بم، استان کرمان قرار دارد. قدمت این اثر تاریخی به دوران پیش از اسلام و حتی دوره هخامنشیان نسبت داده می‌شود و سال‌ها به‌عنوان یک شهر زنده و مهم مورد استفاده بوده است.
+این ارگ شامل بخش‌هایی مانند قلعه، خانه‌ها، بازار، مسجد و برج‌های نگهبانی بوده و با خشت و گل ساخته شده است. موقعیت آن در مسیر جاده ابریشم باعث شده بود که نقش مهمی در تجارت و ارتباطات منطقه داشته باشد.
+ارگ بم نماد معماری سنتی و زندگی شهری در ایران باستان است و با وجود آسیب‌هایی که در زلزله دیده، همچنان یکی از مهم‌ترین آثار تاریخی و فرهنگی ایران محسوب می‌شود.
+</p>
+        </a>
+
+        <a href="#" class="king-card">
+            <img src="sargad.jpg">
+            <div class="king-name">پاسارگاد</div>
+<p>
+پاسارگاد یکی از مهم‌ترین و نخستین پایتخت‌های امپراتوری هخامنشی است که به دستور کوروش کبیر ساخته شد. این مجموعه تاریخی در استان فارس قرار دارد و به‌عنوان یکی از ارزشمندترین آثار باستانی ایران و جهان شناخته می‌شود.
+مهم‌ترین بخش پاسارگاد، آرامگاه کوروش کبیر است که با طراحی ساده اما باشکوه خود، نماد احترام، عدالت و عظمت این پادشاه بزرگ به شمار می‌آید. همچنین در این مجموعه کاخ‌ها، باغ‌ها و سازه‌های سنگی دیده می‌شود که نشان‌دهنده‌ی هنر و معماری پیشرفته ایرانیان باستان است.
+پاسارگاد نه‌تنها یک اثر تاریخی، بلکه نماد آغاز تمدن بزرگ هخامنشی و یکی از مهم‌ترین میراث‌های فرهنگی جهان است</p>
+
+        </a>
+
+        <a href="#" class="king-card">
+            <img src="nagsh.jpg">
+            <div class="king-name">نقش جهان </div>
+<p>
+میدان نقش جهان یکی از باشکوه‌ترین و مهم‌ترین آثار تاریخی ایران است که در شهر اصفهان قرار دارد و در دوره صفوی، به دستور شاه عباس اول ساخته شد. این میدان یکی از بزرگ‌ترین میدان‌های تاریخی جهان به شمار می‌رود و به‌عنوان مرکز سیاسی، فرهنگی و اجتماعی آن زمان استفاده می‌شد.
+اطراف میدان نقش جهان، بناهای بسیار مهمی مانند مسجد امام، مسجد شیخ لطف‌الله، کاخ عالی‌قاپو و بازار قیصریه قرار دارند که هرکدام شاهکاری از معماری ایرانی-اسلامی هستند. این مجموعه نشان‌دهنده‌ی اوج هنر، معماری و تمدن دوره صفوی است.
+امروزه نقش جهان یکی از مهم‌ترین جاذبه‌های گردشگری ایران و ثبت‌شده در فهرست میراث جهانی یونسکو است که سالانه گردشگران زیادی را از سراسر جهان جذب می‌کند.
+
+</p>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Quote -->
+<section class="quote">
+    <h2>فرزندان ایران زمین </h2>
+    <p>از گذشته تا کنون ایران </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p> فرزندان ایران زمین</p>
+</footer>
+
+</body>
+</html>

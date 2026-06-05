@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>فرزندان ایران زمین</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Vazirmatn',sans-serif;
+background:#f7f1e3;
+color:#333;
+}
+
+/* Header */
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 50px;
+
+background:rgba(55,35,20,.85);
+backdrop-filter:blur(10px);
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+}
+
+.logo{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-right:18px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#d8b67c;
+}
+
+/* Hero */
+.hero{
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+url("iran-madfghp.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+text-align:center;
+color:white;
+}
+
+.overlay h1{
+font-size:75px;
+margin-bottom:15px;
+animation:fadeUp 1s ease;
+}
+
+.overlay p{
+font-size:25px;
+margin-bottom:30px;
+}
+
+.hero-btn{
+background:#b8894a;
+padding:15px 35px;
+border-radius:40px;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.hero-btn:hover{
+transform:scale(1.1);
+}
+
+/* About */
+.about{
+padding:100px 10%;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+color:#5a3e2b;
+}
+
+.about p{
+font-size:20px;
+line-height:2;
+}
+
+/* Cards */
+.cards{
+padding:40px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+border-top:5px solid #8b5e3c;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.card h2{
+margin-bottom:15px;
+color:#5a3e2b;
+}
+
+/* Stats */
+.stats{
+padding:100px 10%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.stat{
+background:#5a3e2b;
+color:white;
+padding:30px;
+border-radius:20px;
+}
+
+.stat h3{
+font-size:45px;
+margin-bottom:10px;
+}
+
+/* Quote */
+.quote{
+padding:100px 10%;
+text-align:center;
+background:#ede0c8;
+}
+
+.quote h2{
+color:#5a3e2b;
+margin-bottom:20px;
+}
+
+.quote p{
+font-size:35px;
+font-weight:bold;
+}
+
+/* 👑 Kings Shop Style Section */
+.kings{
+padding:100px 10%;
+text-align:center;
+}
+
+.kings h2{
+font-size:40px;
+margin-bottom:40px;
+color:#5a3e2b;
+}
+
+.kings-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.king-card{
+display:block;
+text-decoration:none;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.king-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 35px rgba(0,0,0,.2);
+}
+
+.king-card img{
+
+height:260px;
+object-fit:cover;
+}
+
+.king-name{
+padding:15px;
+font-size:20px;
+font-weight:bold;
+color:#5a3e2b;
+border-top:1px solid #eee;
+}
+
+/* Footer */
+footer{
+background:#372314;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+/* Animation */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.overlay h1{
+font-size:45px;
+}
+
+.overlay p{
+font-size:18px;
+}
+
+.about h2{
+font-size:30px;
+}
+
+.quote p{
+font-size:25px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo-box">
+        <img src="png1.png" class="logo">
+        <h3>فرزندان ایران زمین</h3>
+    </div>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="king.html">پادشاهان</a>
+        <a href="commanders.html">سرداران</a>
+        <a href="shahname.html">شاهنامه</a>        
+             <a href="work.html">آثار تاریخی </a>
+        <a href="about.html">درباره ما</a>
+        <a href="calling.html">ارتباط با ما </a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="overlay">
+        <h1>درباره شاهنامه</h1>
+        <p>شاهنامه اثر بزرگ و جاودانه‌ی حکیم ابوالقاسم فردوسی است که یکی از مهم‌ترین آثار ادبیات فارسی و تاریخ ایران به شمار می‌آید. این کتاب با بیش از پنجاه هزار بیت شعر، داستان‌ها و افسانه‌های کهن ایران را از آغاز پادشاهی تا دوران پایان حکومت‌های اسطوره‌ای روایت می‌کند.
+در شاهنامه، زندگی پهلوانان، پادشاهان و شخصیت‌های اسطوره‌ای مانند رستم، سهراب، سیاوش و ضحاک به تصویر کشیده شده است. این داستان‌ها فقط روایت‌های حماسی نیستند، بلکه پر از مفاهیم اخلاقی مانند عدالت، شجاعت، وفاداری و مبارزه با ظلم هستند.
+شاهنامه نه تنها یک اثر ادبی، بلکه نماد هویت، فرهنگ و تاریخ ایران است که نسل به نسل منتقل شده و هنوز هم الهام‌بخش مردم در سراسر جهان است.
+</p>
+        <a class="hero-btn" href="index.html">بازگشت به خانه</a>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <h2>درباره نویسنده ی شاهنامه </h2>
+  <div class="kings-grid" width="40%">
+
+        <a href="#" class="king-card">
+            <img src="ferdosi.jpg" width="30%">
+            <div class="king-name">فردوسی</div>
+<p>
+یکی از بزرگ‌ترین شاعران تاریخ ایران و سراینده شاهنامه است. او حدود سی سال از عمر خود را صرف سرودن شاهنامه کرد تا تاریخ، فرهنگ و زبان فارسی را زنده نگه دارد. شاهنامه با بیش از پنجاه هزار بیت، یکی از ارزشمندترین آثار ادبی جهان به شمار می‌رود و نقش مهمی در حفظ زبان فارسی داشته است. فردوسی با خلق این اثر جاودانه، نام خود را برای همیشه در تاریخ و فرهنگ ایران ماندگار کرد.</p>
+
+        </a>
+
+</section>
+<!-- 👑 Kings Section -->
+<section class="kings" id="kings">
+
+   <h2>شخصیت‌های شاهنامه 📜</h2>
+
+    <div class="kings-grid">
+
+        <a href="#" class="king-card">
+            <img src="rostam.jpg">
+            <div class="king-name">رستم</div>
+<p>
+رستم بزرگ‌ترین پهلوان شاهنامه و یکی از نامدارترین قهرمانان تاریخ و ادبیات ایران است. او فرزند زال و رودابه بود و به نیروی فراوان، شجاعت و وفاداری شهرت داشت. رستم در طول زندگی خود در نبردهای بسیاری از ایران دفاع کرد و کارهای بزرگی انجام داد. داستان هفت‌خان رستم و نبرد او با دشمنان از مشهورترین بخش‌های شاهنامه هستند. رستم نماد پهلوانی، فداکاری و عشق به میهن است.
+</p>
+        </a>
+
+        <a href="#" class="king-card">
+            <img src="shah2.jpg">
+            <div class="king-name">ضحاک</div>
+<p>
+ضحاک یکی از مشهورترین شخصیت‌های شاهنامه و نماد ظلم و ستم است. بر اساس داستان‌های شاهنامه، بر شانه‌های او دو مار روییده بود که برای زنده ماندن به مغز جوانان نیاز داشتند. دوران حکومت ضحاک با رنج و سختی مردم همراه بود تا اینکه سرانجام فریدون علیه او قیام کرد و به حکومت ستمگرانه‌اش پایان داد. داستان ضحاک نمادی از مبارزه خیر با شر است.
+</p>
+        </a>
+
+        <a href="#" class="king-card">
+            <img src="syavash.jpg">
+            <div class="king-name">سیاوش</div>
+<p>
+سیاوش یکی از پاک‌ترین و محبوب‌ترین شخصیت‌های شاهنامه است. او فرزند کیکاووس بود و به درستکاری، شجاعت و وفاداری شهرت داشت. سیاوش برای اثبات بی‌گناهی خود از میان آتش گذشت و سالم بیرون آمد. داستان زندگی او نمادی از پاکی، عدالت و مظلومیت است و یکی از غم‌انگیزترین روایت‌های شاهنامه به شمار می‌رود.
+</p>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Quote -->
+<section class="quote">
+    <h2> جمله تاریخی  (از فردوسی)</h2>
+    <p>«بسی رنج بردم در این سال سی
+عجم زنده کردم بدین پارسی»</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p> فرزندان ایران زمین</p>
+</footer>
+
+</body>
+</html>
